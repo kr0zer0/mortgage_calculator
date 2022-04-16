@@ -1,1 +1,1 @@
-web: gunicorn blog_project.wsgi --log-file -
+web: gunicorn mortgage_calculator.wsgi --log-file -
