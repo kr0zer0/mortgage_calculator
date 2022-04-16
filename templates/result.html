@@ -1,6 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-Your monthly payment is: {{ result }}$
+<div class="card border-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header">Your monthly payment:</div>
+    <div class="card-body text-dark">
+        <h5 class="card-title">{{ result }}$</h5>
+    </div>
+</div>
+<a href="{% url 'calculator' %}">
+    <button class="btn btn-dark mb-2">Calculate More</button>
+</a>
+</br>
+<a href="{% url 'home' %}">
+    <button class="btn btn-dark">Go Home</button>
+</a>
+
 
 {% endblock content %}
